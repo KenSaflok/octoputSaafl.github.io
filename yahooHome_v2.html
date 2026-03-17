@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Yahoo Mock Homepage</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background-color: #f0f2f5;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .sidebar {
+      width: 220px;
+      background-color: #fff;
+      padding: 20px;
+      border-right: 1px solid #ddd;
+    }
+
+    .sidebar h2 {
+      font-size: 16px;
+      color: #6001d2;
+      margin-bottom: 10px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      padding: 8px 0;
+      color: #333;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .sidebar li:hover {
+      background-color: #f0f0f0;
+    }
+
+    .main {
+      flex: 1;
+      padding: 20px;
+      min-width: 300px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      color: #6001d2;
+    }
+
+    .search-bar {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-bar input {
+      padding: 8px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+
+    .search-bar button {
+      padding: 8px 12px;
+      background-color: #6001d2;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .search-bar button:hover {
+      background-color: #4b019f;
+    }
+
+    .news-article {
+      background-color: #fff;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      transition: transform 0.2s;
+    }
+
+    .news-article:hover {
+      transform: scale(1.02);
+    }
+
+    .news-article h3 {
+      margin: 0 0 5px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .news-article p {
+      margin: 0;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .ad-section {
+      width: 250px;
+      padding: 20px;
+      background-color: #fff;
+      border-left: 1px solid #ddd;
+    }
+
+    .ad {
+      background-color: #f9f9f9;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar, .ad-section {
+        display: none;
+      }
+
+      .main {
+        padding: 10px;
+      }
+
+      .search-bar input {
+        width: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Categories</h2>
+    <ul>
+      <li>News</li>
+      <li>Finance</li>
+      <li>Sports</li>
+      <li>Mail</li>
+      <li>Search</li>
+      <li>Weather</li>
+      <li>Games</li>
+      <li>Shopping</li>
+      <li>Creators</li>
+      <li>Entertainment</li>
+      <li>Life</li>
+      <li>Newsletters</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <div class="logo">Yahoo</div>
+      <div class="search-bar">
+        <input type="text" placeholder="Search Yahoo...">
+        <button>Search</button>
+      </div>
+    </div>
+
+    <div class="news-article">
+      <h3>Bed Bath & Beyond Refusing To Open Stores In California Is Going Mega-Viral</h3>
+      <p>BuzzFeed | 5K views | 2 min read</p>
+    </div>
+    <div class="news-article">
+      <h3>I looked ugly in selfies and didn’t know why — that’s when I discovered my house was killing me</h3>
+      <p>NY Post | 78 views | 6 min read</p>
+    </div>
+    <div class="news-article">
+      <h3>Hulk Hogan death: Report reveals legendary wrestler may have been victim of medical malpractice</h3>
+      <p>Herd Nation | 650 views | 2 min read</p>
+    </div>
+    <div class="news-article">
+      <h3>4 Cards Now Charging 0% Interest Until Nearly 2027</h3>
+      <p>Ad | The Motley Fool</p>
+    </div>
+  </div>
+
+  <div class="ad-section">
+    <div class="ad">Ad: Yahoo Finance</div>
+    <div class="ad">Ad: Saturday Night Women's Soccer</div>
+  </div>
+</body>
+</html>
